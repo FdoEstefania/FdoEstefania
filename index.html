@@ -172,40 +172,16 @@
                     <div class="col-lg-4 mx-auto">
                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                         <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Nombre</label>
-                                    <input class="form-control" id="name" type="text" placeholder="Nombre" required="required" data-validation-required-message="Por favor introduzca su nombre.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>E-mail</label>
-                                    <input class="form-control" id="email" type="email" placeholder="E-mail" required="required" data-validation-required-message="Por favor, introduzca su dirección de correo electrónico.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Telefono</label>
-                                    <input class="form-control" id="phone" type="tel" placeholder="Telefono" required="required" data-validation-required-message="Por favor, introduzca su número de teléfono.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Mensaje</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Mensaje" required="required" data-validation-required-message="Por favor ingrese un mensaje."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <br>
-                            <div id="success"></div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-outline-primary btn-block btn-online" id="sendMessageButton">Enviar</button>
-                            </div>
+                   <form action="http://formspree.io/fdo.e@hotmail.com" method = "POST">
+                           <div class="control-group">
+                               <input type="email" name="_replyto" class="form-control" placeholder="E-mail" data-validation-required-message="Por favor, introduzca su dirección de correo electrónico.">
+                           </div>
+                           <div class="control-group">
+                               <textarea name="body" class="form-control" placeholder="Mensaje" data-validation-required-message="Por favor ingrese un mensaje."></textarea>
+                           </div>
+                           <div class="control-group">
+                               <input type="submit" value="Enviar" class="btn btn-outline-primary btn-block btn-online">
+                           </div>
                         </form>
                     </div>
                 </div>
