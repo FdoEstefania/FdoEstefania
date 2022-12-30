@@ -1,0 +1,17 @@
+{
+    "name": "fernando.estefania/fdo-estefania",
+    "description": "portafolio",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "FernandoEstefania\\FdoEstefania\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "fdoestefania"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
